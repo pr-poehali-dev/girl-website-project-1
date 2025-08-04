@@ -70,25 +70,57 @@ const Index = () => {
             </p>
             
             {/* First Meeting Story */}
-            <Card className="bg-white/70 backdrop-blur-sm border-rose-200 shadow-lg max-w-2xl mx-auto mb-8">
+            <Card className="bg-white/70 backdrop-blur-sm border-rose-200 shadow-lg max-w-4xl mx-auto mb-8">
               <CardContent className="p-8">
-                <div className="flex items-center justify-center mb-6">
-                  <Icon name="MapPin" size={32} className="text-rose-500 mr-3" />
-                  <h3 className="text-2xl font-heading text-rose-600">
-                    День нашего знакомства
+                <div className="text-center mb-6">
+                  <h3 className="text-3xl font-heading text-rose-600 mb-2">
+                    День, который изменил мою жизнь
                   </h3>
-                </div>
-                <p className="text-rose-700 mb-4 text-lg leading-relaxed">
-                  15 августа 2023 года наши пути пересеклись...
-                </p>
-                <div className="bg-rose-50 rounded-lg p-4 mb-4">
-                  <p className="text-rose-600 font-medium text-center">
-                    Красноярский рабочий 33 → Набережная в центре города
+                  <p className="text-rose-500 text-lg">
+                    15 августа 2023 года
                   </p>
                 </div>
-                <p className="text-rose-600 italic text-center">
-                  "Тот путь, который привёл меня к тебе — самый важный в моей жизни"
-                </p>
+                
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <div className="relative overflow-hidden rounded-lg shadow-md">
+                      <img 
+                        src="/img/9bbf9ab9-b5d8-4baf-b713-efb0924839ee.jpg" 
+                        alt="Карта маршрута от Красноярский рабочий 33 до Набережной"
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-rose-900/20 to-transparent" />
+                      <div className="absolute bottom-3 left-3 right-3">
+                        <p className="text-white text-sm font-medium text-center bg-black/30 rounded px-2 py-1">
+                          Маршрут нашей первой встречи
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <Icon name="MapPin" size={24} className="text-rose-500" />
+                      <span className="text-rose-700 font-medium">Красноярский рабочий 33</span>
+                    </div>
+                    
+                    <div className="flex justify-center">
+                      <Icon name="ArrowDown" size={24} className="text-rose-400" />
+                    </div>
+                    
+                    <div className="flex items-center space-x-3 mb-4">
+                      <Icon name="Heart" size={24} className="text-rose-500" />
+                      <span className="text-rose-700 font-medium">Набережная в центре города</span>
+                    </div>
+                    
+                    <div className="bg-rose-50 rounded-lg p-4 mt-6">
+                      <p className="text-rose-600 italic text-center leading-relaxed">
+                        "Тот путь, который привёл меня к тебе — самый важный в моей жизни. 
+                        Каждый шаг по этому маршруту был шагом навстречу счастью."
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
             <div className="flex justify-center space-x-8 text-primary">
